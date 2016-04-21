@@ -34,10 +34,8 @@ module ZipTax
     end
 
     def self.request_for(postalcode: nil, state: nil, city: nil)
-
       rt = self.new(postalcode: postalcode, state: state, city: city)
       rt.request_tax
     end
-
   end
 end
